@@ -1,0 +1,11 @@
+app-dir: .
+
+disk: 2048
+
+memory: 256
+
+name: Quizz
+
+framework:
+  type: php
+  document-root: maze

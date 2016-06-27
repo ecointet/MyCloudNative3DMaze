@@ -3,7 +3,7 @@
 "use strict";
 
 // Size of a cube/block
-var BLOCK_SIZE = 7;
+var BLOCK_SIZE = 5;
 // Are we inside the labyrinth or looking at the QR Code in zoom out?
 var QRCodeView = false;
 var freeCamera, canvas, engine, lovescene;
@@ -14,8 +14,8 @@ function createQRCodeLabyrinth(nameOfYourGirlFriend, url) {
     //var mCount = 33;
     // It needs a HTML element to work with
     var qrcode = new QRCode(document.createElement("div"), { width: 400, height: 400 });
-   // qrcode.makeCode(nameOfYourGirlFriend + ", I love you!");
-    qrcode.makeCode("http://"+url);
+   qrcode.makeCode("https://docs.google.com/forms/d/1G_irRshKb7e8zczdMNvQDQTppjUcQYz4mTbNTLn14sU/viewform");
+   // qrcode.makeCode("http://"+url);
     // needed to set the proper size of the playground
     var mCount = qrcode._oQRCode.moduleCount;
 
